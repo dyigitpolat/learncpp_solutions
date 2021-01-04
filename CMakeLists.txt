@@ -20,6 +20,9 @@ file(GLOB SOURCES src/*.cpp)
 # add_subdirectory(lib/A_LIB_DIR)
 # add_subdirectory(lib/A_LIB_DIR)
 
+# enable all warnings
+add_compile_options(-Wall)
+
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
 add_executable(${EXEC} ${SOURCES})
 
