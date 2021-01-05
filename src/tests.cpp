@@ -7,6 +7,7 @@
 #include "utilities.hpp"
 #include "card_game.hpp"
 #include "misc.hpp"
+#include "calculator.hpp"
 
 void tests::test_utilities()
 {
@@ -26,4 +27,9 @@ void tests::test_card_game()
 void tests::test_misc()
 {
     misc::tests::test_print_employee_name();
+}
+
+void tests::test_calculator()
+{
+    calculator::tests::test_calculator();
 }

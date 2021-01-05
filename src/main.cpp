@@ -22,6 +22,7 @@ int main()
     tests::test_utilities();
     //tests::test_card_game();
     tests::test_misc();
+    tests::test_calculator();
 
 
     return 0;
