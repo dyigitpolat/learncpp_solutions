@@ -19,3 +19,23 @@ void utilities::print_c_string( char * str)
     }
     std::cout << std::endl;
 }
+
+int utilities::sum_to( const int value)
+{
+    return value * (value + 1) / 2;
+}
+
+std::pair<int, int> utilities::minmax( const int a, const int b)
+{
+    return a < b ? std::pair{a, b} : std::pair{b, a};
+}
+
+int utilities::get_index_of_largest( const std::vector<int> &vec)
+{
+    return *std::max_element(vec.begin(), vec.end());
+}
+
+const std::string& utilities::get_element( const std::vector<std::string> &vec, const int index)
+{
+    return vec[index];
+}

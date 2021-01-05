@@ -25,7 +25,7 @@ void utilities::tests::test_print_c_str()
     char arr1[] = "Step through each character.";
     char arr2[] = "Stop when you hit the null terminator.";
 
-    std::cout << "Testing C-style string print implementation... " << std::endl;
+    std::cout << "Testing C-style string printing... " << std::endl;
     std::cout << "Test string 1: " << arr1  << std::endl;
     std::cout << "Test string 2: " << arr2  << std::endl;
 
@@ -34,6 +34,48 @@ void utilities::tests::test_print_c_str()
 
     std::cout << "Printing #2: " << std::endl;
     print_c_string(arr2);
+
+    std::cout << std::endl;
+}
+
+void utilities::tests::test_sum_to()
+{
+    int value{50};
+
+    std::cout << "Testing min-max... " << std::endl;
+    std::cout << "Sum of values from 1 to " << value << " : " << std::endl;
+    std::cout << sum_to(value) << std::endl;
+
+    std::cout << std::endl;
+}
+
+void utilities::tests::test_minmax()
+{
+    int a{};
+    int b{};
+
+    std::cout << "Testing min-max... " << std::endl;
+
+    {
+        a = -3; b = 5;
+        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        auto [min, max] = minmax(a, b);
+        std::cout << "Min-Max: " << min << " " << max << std::endl;
+    }
+
+    {
+        a = -1; b = -2;
+        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        auto [min, max] = minmax(a, b);
+        std::cout << "Min-Max: " << min << " " << max << std::endl;
+    }
+
+    {
+        a = 7; b = 7;
+        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        auto [min, max] = minmax(a, b);
+        std::cout << "Min-Max: " << min << " " << max << std::endl;
+    }
 
     std::cout << std::endl;
 }
