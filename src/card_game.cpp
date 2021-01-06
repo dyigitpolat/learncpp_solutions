@@ -158,12 +158,10 @@ card_game::GameResult card_game::play_simple_blackjack()
     //user takes card 1
     std::cout << "User draws card." << std::endl;
     user_hand_value += get_card_value(draw_card(deck, card_index));
-    std::cout << "User's score: " << user_hand_value << std::endl;
 
     //user takes card 2
     std::cout << "User draws card." << std::endl;
     user_hand_value += get_card_value(draw_card(deck, card_index));
-    std::cout << "User's score: " << user_hand_value << std::endl;
 
 
     char user_move{};
