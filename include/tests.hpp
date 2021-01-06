@@ -6,4 +6,5 @@ namespace tests
     void test_card_game();
     void test_misc();
     void test_calculator();
+    void test_recursion();
 }

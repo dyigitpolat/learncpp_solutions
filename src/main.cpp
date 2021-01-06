@@ -19,10 +19,11 @@ int main()
     std::cout << std::endl;
     //----------------------------------------------------//
 
-    tests::test_utilities();
-    //tests::test_card_game();
-    tests::test_misc();
+    tests::test_recursion();
     tests::test_calculator();
+    tests::test_misc();
+    tests::test_card_game();
+    tests::test_utilities();
 
 
     return 0;
