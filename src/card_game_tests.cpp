@@ -55,6 +55,7 @@ void card_game::tests::test_simple_blackjack()
 {
     char option_play_again{};
 
+    std::cout << "Testing simple blackjack game... " << std::endl;
     do
     {
         GameResult result = play_simple_blackjack();
@@ -82,4 +83,5 @@ void card_game::tests::test_simple_blackjack()
         std::cin >> option_play_again;
     } while (option_play_again == 'y');
     
+    std::cout << std::endl;
 }

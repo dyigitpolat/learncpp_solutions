@@ -42,4 +42,5 @@ void recursion::tests::test_print_binary_representation()
 
     print_binary_representation(user_number);
 
+    std::cout << std::endl;
 }
