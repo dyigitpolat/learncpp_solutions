@@ -1,7 +1,7 @@
 #pragma once
 
 //std headers
-#include <string>
+#include <string> //std::string
 
 namespace misc
 {

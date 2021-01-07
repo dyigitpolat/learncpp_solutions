@@ -1,7 +1,7 @@
 #include "utilities.hpp"
 
 //std headers
-#include <iostream>
+#include <iostream> //std::cout, std::endl
 
 void utilities::tests::test_swap()
 {

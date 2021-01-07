@@ -1,7 +1,7 @@
 #include "recursion.hpp"
 
 //std headers
-#include <iostream>
+#include <iostream> //std::cout, std::endl
 
 int recursion::factorial( const int n )
 {

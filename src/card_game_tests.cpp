@@ -1,8 +1,8 @@
 #include "card_game.hpp"
 
 //std headers
-#include <iostream>
-#include <array>
+#include <iostream> //std::cout, std::endl
+#include <array> //std::array
 
 void card_game::tests::test_print_game_card()
 {

@@ -1,8 +1,9 @@
 #include "utilities.hpp"
 
 //std headers
-#include <iostream>
-#include <utility>
+#include <iostream> //std::cout, std::endl
+#include <utility> //std::pair
+#include <algorithm> //std::max_element
 
 void utilities::swap( int &a, int &b)
 {

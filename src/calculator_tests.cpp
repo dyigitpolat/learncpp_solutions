@@ -1,7 +1,7 @@
 #include "calculator.hpp"
 
 //std headers
-#include <iostream>
+#include <iostream> //std::cout, std::endl
 
 void calculator::tests::test_calculator()
 {

@@ -1,7 +1,7 @@
 #include "recursion.hpp"
 
 //std headers
-#include <iostream>
+#include <iostream> //std::cout, std::endl
 
 void recursion::tests::test_factorial()
 {

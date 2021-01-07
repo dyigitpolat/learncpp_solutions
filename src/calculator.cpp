@@ -1,7 +1,7 @@
 #include "calculator.hpp"
 
 //std headers
-#include <iostream>
+#include <iostream> //std::cout, std::endl
 
 int calculator::add(const int a, const int b)
 {
@@ -28,13 +28,13 @@ calculator::ArithmeticFunction calculator::get_arithmetic_function( const operat
     switch( c)
     {
         case '+':
-            return &add;
+            return add;
         case '-':
-            return &subtract;
+            return subtract;
         case '*':
-            return &multiply;
+            return multiply;
         case '/':
-            return &divide;
+            return divide;
         default:
             return nullptr;
     }

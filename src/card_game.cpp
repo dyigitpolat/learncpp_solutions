@@ -1,9 +1,11 @@
 #include "card_game.hpp"
 
 //std headers
-#include <iostream>
-#include <array>
-#include <algorithm>
+#include <iostream> //std::cout, std::endl
+#include <array> //std::array
+#include <algorithm> //std::shuffle
+#include <random> //std::default_random_engine
+#include <chrono> //std::chrono::system_clock
 
 char card_game::get_rank_char( CardRank r)
 {
@@ -102,7 +104,14 @@ void card_game::print_deck( const std::array<Card, DECK_SIZE> &deck)
 
 void card_game::shuffle_deck( std::array<Card, DECK_SIZE> &deck)
 {
-    std::random_shuffle(deck.begin(), deck.end());
+    /**
+     * taken from 
+     * http://www.cplusplus.com/reference/algorithm/shuffle/
+     */
+
+    // obtain a time-based seed:
+    unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+    std::shuffle (deck.begin(), deck.end(), std::default_random_engine(seed));
 }
 
 int card_game::get_card_value( const Card &c)

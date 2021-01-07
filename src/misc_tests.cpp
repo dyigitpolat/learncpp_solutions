@@ -1,8 +1,8 @@
 #include "misc.hpp"
 
 //std headers
-#include <string>
-#include <iostream>
+#include <string> //std::string
+#include <iostream> //std::cout, std::endl
 
 void misc::tests::test_print_employee_name()
 {

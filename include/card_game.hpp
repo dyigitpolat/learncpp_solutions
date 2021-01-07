@@ -1,6 +1,6 @@
 #pragma once
 
-#include <array>
+#include <array> //std::array
 
 namespace card_game {
     enum CardRank
