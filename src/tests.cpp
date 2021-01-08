@@ -9,6 +9,7 @@
 #include "misc.hpp"
 #include "calculator.hpp"
 #include "recursion.hpp"
+#include "lambdas.hpp"
 
 void tests::test_utilities()
 {
@@ -40,4 +41,11 @@ void tests::test_recursion()
     recursion::tests::test_factorial();
     recursion::tests::test_sum_of_digits();
     recursion::tests::test_print_binary_representation();
+}
+
+
+void tests::test_lambdas()
+{
+    lambdas::tests::test_print_student_with_best_score();
+    lambdas::tests::test_sort_seasons_by_temperatures();
 }

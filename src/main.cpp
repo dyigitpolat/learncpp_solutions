@@ -19,6 +19,7 @@ int main()
     std::cout << std::endl;
     //----------------------------------------------------//
 
+    tests::test_lambdas();
     tests::test_recursion();
     tests::test_calculator();
     tests::test_misc();
