@@ -26,6 +26,5 @@ int main()
     tests::test_card_game();
     tests::test_utilities();
 
-
     return 0;
 }

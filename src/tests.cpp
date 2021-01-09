@@ -48,4 +48,5 @@ void tests::test_lambdas()
 {
     lambdas::tests::test_print_student_with_best_score();
     lambdas::tests::test_sort_seasons_by_temperatures();
+    lambdas::tests::test_math_game();
 }
