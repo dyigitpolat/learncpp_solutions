@@ -83,7 +83,7 @@ void lambdas::math_game()
             std::cout 
             << "Maybe..."
             << *std::min_element( nums.begin(), nums.end(), 
-                [=](int a, int b){ return std::abs(a - user_input) < std::abs(a - user_input); } )
+                [=](int a, int b){ return std::abs(a - user_input) < std::abs(b - user_input); } )
             << "?" << std::endl;
         }
     } while (!is_game_ended);
