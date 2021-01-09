@@ -75,8 +75,6 @@ void lambdas::math_game()
             std::cout 
                 << "Good! " << nums.size() << " numbers left... "
                 << std::endl;
-            
-            is_game_ended = (nums.size() == 0);
         }
         else
         {
@@ -86,6 +84,8 @@ void lambdas::math_game()
                 [=](int a, int b){ return std::abs(a - user_input) < std::abs(b - user_input); } )
             << "?" << std::endl;
         }
+
+        is_game_ended = (nums.size() == 0);
     } while (!is_game_ended);
     
 }
