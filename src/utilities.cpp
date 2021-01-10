@@ -40,3 +40,8 @@ const std::string& utilities::get_element( const std::vector<std::string> &vec, 
 {
     return vec[index];
 }
+
+double utilities::max_value(const double a, const double b)
+{
+    return a > b ? a : b;
+}

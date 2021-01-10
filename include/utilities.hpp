@@ -16,6 +16,7 @@ namespace utilities
     std::pair<int, int> minmax( const int a, const int b);
     int get_index_of_largest( const std::vector<int> &vec);
     const std::string& get_element( const std::vector<std::string> &vec, const int index);
+    double max_value(const double a, const double b);
 
     namespace tests
     {

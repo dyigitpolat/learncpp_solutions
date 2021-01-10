@@ -8,4 +8,5 @@ namespace tests
     void test_calculator();
     void test_recursion();
     void test_lambdas();
+    void test_binary_search();
 }
