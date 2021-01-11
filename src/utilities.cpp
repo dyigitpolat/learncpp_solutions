@@ -15,7 +15,7 @@ void utilities::swap( int &a, int &b)
 
 void utilities::print_c_string( char * str)
 {
-    for( char * p = str; *p != 0; p++)
+    for( char * p = str; *p != 0; ++p)
     {
         std::cout << *p;
     }
@@ -112,7 +112,7 @@ int utilities::Stack::pop()
 void utilities::Stack::print() const
 {
     std::cout << "( ";
-    for(container_size_t i = 0; i < m_length; i++)
+    for(container_size_t i = 0; i < m_length; ++i)
     {
         std::cout << m_arr[i] << " ";
     }

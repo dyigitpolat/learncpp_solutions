@@ -7,7 +7,7 @@ void recursion::tests::test_factorial()
 {
     std::cout << "Testing recursive factorial implementation... " << std::endl;
 
-    for(int i = 0; i < 8; i++)
+    for(int i = 0; i < 8; ++i)
     {
         std::cout << "Factorial of " << i << ": " << factorial(i) << std::endl;
 

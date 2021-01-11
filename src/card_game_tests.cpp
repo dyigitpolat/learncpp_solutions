@@ -35,7 +35,7 @@ void card_game::tests::test_deck()
     print_deck(deck);
 
     std::cout << "Printing card values of the first 13 cards... " << std::endl;
-    for( int i = 0; i < 13; i++)
+    for( int i = 0; i < 13; ++i)
     {
         print_card(deck[i]);
         std::cout << " " << get_card_value(deck[i]) << std::endl;

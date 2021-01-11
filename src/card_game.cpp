@@ -82,9 +82,9 @@ void card_game::print_card(const Card &c)
 
 void card_game::create_deck( std::array<Card, DECK_SIZE> &deck)
 {
-    for(int s = 0; s < NUM_SUITS; s++)
+    for(int s = 0; s < NUM_SUITS; ++s)
     {
-        for(int r = 0; r < NUM_RANKS; r++)
+        for(int r = 0; r < NUM_RANKS; ++r)
         {
             deck[s*NUM_RANKS + r] 
                 = Card{ static_cast<CardRank>(r), static_cast<CardSuit>(s) };
