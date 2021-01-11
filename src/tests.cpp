@@ -20,6 +20,7 @@ void tests::test_utilities()
     utilities::tests::test_minmax();
     utilities::tests::test_int_pair();
     utilities::tests::test_point3d();
+    utilities::tests::test_stack();
 }
 
 void tests::test_card_game()

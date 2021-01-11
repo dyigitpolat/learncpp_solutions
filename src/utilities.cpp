@@ -4,6 +4,7 @@
 #include <iostream> //std::cout, std::endl
 #include <utility> //std::pair
 #include <algorithm> //std::max_element
+#include <cassert> //assert
 
 void utilities::swap( int &a, int &b)
 {
@@ -82,4 +83,38 @@ bool utilities::Point3d::is_equal(const Point3d &p) const
         m_x == p.m_x &&
         m_y == p.m_y &&
         m_z == p.m_z;
+}
+
+void utilities::Stack::reset()
+{
+    m_length = 0;
+}
+
+bool utilities::Stack::push(int val)
+{
+    if( m_length != m_arr.size())
+    {
+        m_arr[m_length++] = val;
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+int utilities::Stack::pop()
+{
+    assert(m_length > 0 && "STACK EMPTY");
+    return m_arr[--m_length];
+}
+
+void utilities::Stack::print() const
+{
+    std::cout << "( ";
+    for(container_size_t i = 0; i < m_length; i++)
+    {
+        std::cout << m_arr[i] << " ";
+    }
+    std::cout << ")" << std::endl;
 }

@@ -3,6 +3,7 @@
 //std headers
 #include <utility> //std::pair
 #include <vector> //std::vector
+#include <array> //std::array
 #include <string> //std::string
 
 namespace utilities
@@ -42,6 +43,22 @@ namespace utilities
         bool is_equal(const Point3d &p) const;
     };
 
+    class Stack
+    {
+    private:
+        using container_t = std::array<int, 10>;
+        using container_size_t = container_t::size_type;
+
+        container_t m_arr;
+        container_size_t m_length{};
+    
+    public:
+        void reset();
+        bool push(int val);
+        int pop();
+        void print() const;
+    };
+
     namespace tests
     {
         // Chapter 9
@@ -55,5 +72,6 @@ namespace utilities
         // Chapter 11
         void test_int_pair();
         void test_point3d();
+        void test_stack();
     }
 }

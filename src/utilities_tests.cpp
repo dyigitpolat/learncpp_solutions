@@ -94,7 +94,6 @@ void utilities::tests::test_int_pair()
     std::cout << std::endl;
 }
 
-
 void utilities::tests::test_point3d()
 {
     std::cout << "Testing 3d point... " << std::endl;
@@ -130,6 +129,29 @@ void utilities::tests::test_point3d()
     {
         std::cout << "point1 and point3 are not equal\n";
     }
+    
+    std::cout << std::endl;
+}
+
+void utilities::tests::test_stack()
+{
+    std::cout << "Testing stack... " << std::endl;
+
+    Stack stack;
+	stack.reset();
+	stack.print();
+ 
+	stack.push(5);
+	stack.push(3);
+	stack.push(8);
+	stack.print();
+ 
+	stack.pop();
+	stack.print();
+ 
+	stack.pop();
+	stack.pop();
+	stack.print();
     
     std::cout << std::endl;
 }
