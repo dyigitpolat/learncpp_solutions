@@ -45,3 +45,14 @@ double utilities::max_value(const double a, const double b)
 {
     return a > b ? a : b;
 }
+
+void utilities::IntPair::set(const int a, const int b)
+{
+    m_a = a;
+    m_b = b;
+}
+
+void utilities::IntPair::print()
+{
+    std::cout << "Pair(" << m_a << ", " << m_b << ")" << std::endl;
+}

@@ -18,6 +18,7 @@ void tests::test_utilities()
     utilities::tests::test_print_c_str();
     utilities::tests::test_sum_to();
     utilities::tests::test_minmax();
+    utilities::tests::test_int_pair();
 }
 
 void tests::test_card_game()

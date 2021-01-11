@@ -18,6 +18,17 @@ namespace utilities
     const std::string& get_element( const std::vector<std::string> &vec, const int index);
     double max_value(const double a, const double b);
 
+    //Chapter 11
+    class IntPair
+    {
+    public:
+        int m_a;
+        int m_b;
+
+        void set(const int a, const int b);
+        void print();
+    };
+
     namespace tests
     {
         // Chapter 9
@@ -27,5 +38,8 @@ namespace utilities
         // Chapter 10
         void test_sum_to();
         void test_minmax();
+        
+        // Chapter 11
+        void test_int_pair();
     }
 }
