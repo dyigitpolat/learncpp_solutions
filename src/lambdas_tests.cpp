@@ -5,7 +5,6 @@
 
 void lambdas::tests::test_print_student_with_best_score()
 {
-    std::cout << "Testing \"student with best score\"... " << std::endl;
     std::array<Student, 8> arr{
         {{"Albert", 3},
          {"Ben", 5},
@@ -17,14 +16,10 @@ void lambdas::tests::test_print_student_with_best_score()
          {"Hagrid", 5}}};
 
     print_student_with_best_score(arr);
-
-    std::cout << std::endl;
 }
 
 void lambdas::tests::test_sort_seasons_by_temperatures()
 {
-    std::cout << "Testing temperature based season sorting... " << std::endl;
-
     std::array<Season, 4> seasons{
         {{"Spring", 13.5},
          {"Summer", 27.8},
@@ -37,15 +32,9 @@ void lambdas::tests::test_sort_seasons_by_temperatures()
     {
         std::cout << season.name << std::endl;
     }
-
-    std::cout << std::endl;
 }
 
 void lambdas::tests::test_math_game()
 {
-    std::cout << "Testing maths game... " << std::endl;
-
     math_game();
-
-    std::cout << std::endl;
 }

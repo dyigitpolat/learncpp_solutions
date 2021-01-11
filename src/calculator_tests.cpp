@@ -5,7 +5,5 @@
 
 void calculator::tests::test_calculator()
 {
-    std::cout << "Testing calculator... " << std::endl;
     start();
-    std::cout << std::endl;
 }

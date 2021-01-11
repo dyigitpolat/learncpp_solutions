@@ -5,8 +5,6 @@
 
 void binary_search::tests::test_find()
 {
-    std::cout << "Testing binary search... " << std::endl;
-
     constexpr int array[]{3, 6, 8, 12, 14, 17, 20, 21, 26, 32, 36, 37, 42, 44, 48};
 
     // We're going to test a bunch of values to see if they produce the expected results
@@ -35,6 +33,4 @@ void binary_search::tests::test_find()
         else // otherwise, our binarySearch() function must be broken
             std::cout << "test value " << testValues[count] << " failed.  There's something wrong with your code! (iterative)\n";
     }
-
-    std::cout << std::endl;
 }

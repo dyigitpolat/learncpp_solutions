@@ -9,8 +9,6 @@ void card_game::tests::test_print_game_card()
     Card c1{RANK_ACE, SUIT_SPADES};
     Card c2{RANK_2, SUIT_HEARTS};
 
-    std::cout << "Testing game card printing... " << std::endl;
-
     std::cout << "Printing Ace of Spades: " << std::endl;
     print_card(c1);
     std::cout << std::endl;
@@ -18,15 +16,11 @@ void card_game::tests::test_print_game_card()
     std::cout << "Printing 2 of Hearts: " << std::endl;
     print_card(c2);
     std::cout << std::endl;
-
-    std::cout << std::endl;
 }
 
 void card_game::tests::test_deck()
 {
     std::array<Card, DECK_SIZE> deck;
-
-    std::cout << "Testing game card printing... " << std::endl;
 
     std::cout << "Creating deck... " << std::endl;
     create_deck(deck);
@@ -46,8 +40,6 @@ void card_game::tests::test_deck()
 
     std::cout << "Printing deck after shuffle... " << std::endl;
     print_deck(deck);
-
-    std::cout << std::endl;
 }
 
 
@@ -55,7 +47,6 @@ void card_game::tests::test_simple_blackjack()
 {
     char option_play_again{};
 
-    std::cout << "Testing simple blackjack game... " << std::endl;
     do
     {
         GameResult result = play_simple_blackjack();
@@ -82,6 +73,4 @@ void card_game::tests::test_simple_blackjack()
         std::cout << "Play again? (yes: y, quit otherwise): " << std::endl;
         std::cin >> option_play_again;
     } while (option_play_again == 'y');
-    
-    std::cout << std::endl;
 }

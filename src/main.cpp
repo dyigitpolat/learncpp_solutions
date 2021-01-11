@@ -5,6 +5,7 @@
 
 //user headers
 #include "tests.hpp"
+#include "demo_menu.hpp"
 
 int main()
 {
@@ -15,18 +16,17 @@ int main()
     std::cout << "  Test Program Entry Point " << std::endl;
     std::cout << "- - - - - - - - - - - - - -" << std::endl;
     std::cout << "- - - - - - - - - - - - - -" << std::endl;
-    std::cout << std::endl;
-    std::cout << std::endl;
     //----------------------------------------------------//
 
-    tests::test_utilities();
-    
-    tests::test_binary_search();
-    tests::test_lambdas();
-    tests::test_recursion();
-    tests::test_calculator();
-    tests::test_misc();
-    tests::test_card_game();
+    DemoMenu main_menu("MAIN MENU");
+    main_menu.add_menu_item({tests::test_utilities, "Utilities"});
+    main_menu.add_menu_item({tests::test_misc, "Misc"});
+    main_menu.add_menu_item({tests::test_recursion, "Recursion"});
+    main_menu.add_menu_item({tests::test_lambdas, "Lambdas"});
+    main_menu.add_menu_item({tests::test_card_game, "Card Game"});
+    main_menu.add_menu_item({tests::test_calculator, "Calculator"});
+    main_menu.add_menu_item({tests::test_binary_search, "Binary Search"});
+    main_menu.show();
 
     return 0;
 }
