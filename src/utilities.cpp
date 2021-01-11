@@ -56,3 +56,30 @@ void utilities::IntPair::print()
 {
     std::cout << "Pair(" << m_a << ", " << m_b << ")" << std::endl;
 }
+
+
+void utilities::Point3d::set_values(const int x, const int y, const int z)
+{
+    m_x = x;
+    m_y = y;
+    m_z = z;
+}
+
+void utilities::Point3d::print() const
+{
+    std::cout 
+        << "<" 
+        << m_x << ", " 
+        << m_y << ", " 
+        << m_z 
+        << ">" 
+        << std::endl;
+}
+
+bool utilities::Point3d::is_equal(const Point3d &p) const
+{
+    return 
+        m_x == p.m_x &&
+        m_y == p.m_y &&
+        m_z == p.m_z;
+}

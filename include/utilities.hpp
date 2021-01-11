@@ -29,6 +29,19 @@ namespace utilities
         void print();
     };
 
+    class Point3d
+    {
+    private:
+        int m_x;
+        int m_y;
+        int m_z;
+    
+    public:
+        void set_values(const int x, const int y, const int z);
+        void print() const;
+        bool is_equal(const Point3d &p) const;
+    };
+
     namespace tests
     {
         // Chapter 9
@@ -41,5 +54,6 @@ namespace utilities
         
         // Chapter 11
         void test_int_pair();
+        void test_point3d();
     }
 }
