@@ -20,8 +20,14 @@ file(GLOB SOURCES src/*.cpp)
 # add_subdirectory(lib/A_LIB_DIR)
 # add_subdirectory(lib/A_LIB_DIR)
 
-# enable all warnings
-add_compile_options(-Wall)
+# enable all warnings and treat them as errors in a portable way
+if (MSVC)
+    # warning level 4 and all warnings as errors
+    add_compile_options(/W4 /WX)
+else()
+    # lots of warnings and all warnings as errors
+    add_compile_options(-Wall -Wextra -pedantic -Werror)
+endif()
 
 # compiles the files defined by SOURCES to generante the executable defined by EXEC
 add_executable(${EXEC} ${SOURCES})
