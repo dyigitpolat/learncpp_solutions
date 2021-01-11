@@ -65,10 +65,10 @@ namespace card_game {
     
     GameResult play_simple_blackjack();
 
-    namespace tests
+    namespace demos
     {
-        void test_print_game_card();
-        void test_deck();
-        void test_simple_blackjack();
+        void demo_print_game_card();
+        void demo_deck();
+        void demo_simple_blackjack();
     }
 }

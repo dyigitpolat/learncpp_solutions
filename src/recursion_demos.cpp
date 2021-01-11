@@ -3,7 +3,7 @@
 //std headers
 #include <iostream> //std::cout, std::endl
 
-void recursion::tests::test_factorial()
+void recursion::demos::demo_factorial()
 {
     for(int i = 0; i < 8; ++i)
     {
@@ -12,7 +12,7 @@ void recursion::tests::test_factorial()
     }
 }
 
-void recursion::tests::test_sum_of_digits()
+void recursion::demos::demo_sum_of_digits()
 {
     int i{};
 
@@ -26,7 +26,7 @@ void recursion::tests::test_sum_of_digits()
     std::cout << "Sum of the digits of " << i << ": " << sum_of_digits(i) << std::endl;
 }
 
-void recursion::tests::test_print_binary_representation()
+void recursion::demos::demo_print_binary_representation()
 {
     int user_number{};
     std::cout << "Enter number: ";

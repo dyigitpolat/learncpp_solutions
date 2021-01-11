@@ -3,7 +3,7 @@
 //std headers
 #include <iostream> //std::cout, std::endl
 
-void lambdas::tests::test_print_student_with_best_score()
+void lambdas::demos::demo_print_student_with_best_score()
 {
     std::array<Student, 8> arr{
         {{"Albert", 3},
@@ -18,7 +18,7 @@ void lambdas::tests::test_print_student_with_best_score()
     print_student_with_best_score(arr);
 }
 
-void lambdas::tests::test_sort_seasons_by_temperatures()
+void lambdas::demos::demo_sort_seasons_by_temperatures()
 {
     std::array<Season, 4> seasons{
         {{"Spring", 13.5},
@@ -34,7 +34,7 @@ void lambdas::tests::test_sort_seasons_by_temperatures()
     }
 }
 
-void lambdas::tests::test_math_game()
+void lambdas::demos::demo_math_game()
 {
     math_game();
 }

@@ -26,10 +26,10 @@ namespace lambdas
 
     void math_game();
 
-    namespace tests
+    namespace demos
     {
-        void test_print_student_with_best_score();
-        void test_sort_seasons_by_temperatures();
-        void test_math_game();
+        void demo_print_student_with_best_score();
+        void demo_sort_seasons_by_temperatures();
+        void demo_math_game();
     }
 }

@@ -4,7 +4,7 @@
 #include <iostream> //std::cout, std::endl
 #include <array> //std::array
 
-void card_game::tests::test_print_game_card()
+void card_game::demos::demo_print_game_card()
 {
     Card c1{RANK_ACE, SUIT_SPADES};
     Card c2{RANK_2, SUIT_HEARTS};
@@ -18,7 +18,7 @@ void card_game::tests::test_print_game_card()
     std::cout << std::endl;
 }
 
-void card_game::tests::test_deck()
+void card_game::demos::demo_deck()
 {
     std::array<Card, DECK_SIZE> deck;
 
@@ -43,7 +43,7 @@ void card_game::tests::test_deck()
 }
 
 
-void card_game::tests::test_simple_blackjack()
+void card_game::demos::demo_simple_blackjack()
 {
     char option_play_again{};
 

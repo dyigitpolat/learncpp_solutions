@@ -3,12 +3,12 @@
 //std headers
 #include <iostream> //std::cout, std::endl
 
-void utilities::tests::test_swap()
+void utilities::demos::demo_swap()
 {
     int a { 33 };
     int b { 55 };
 
-    std::cout << "Testing swap implementation... " << std::endl;
+    std::cout << "Demoing swap implementation... " << std::endl;
 
     std::cout << "Before swap: " << std::endl;
     std::cout << "a: " << a << " b: " << b << std::endl;
@@ -20,14 +20,14 @@ void utilities::tests::test_swap()
     std::cout << std::endl;
 }
 
-void utilities::tests::test_print_c_str()
+void utilities::demos::demo_print_c_str()
 {
     char arr1[] = "Step through each character.";
     char arr2[] = "Stop when you hit the null terminator.";
 
-    std::cout << "Testing C-style string printing... " << std::endl;
-    std::cout << "Test string 1: " << arr1  << std::endl;
-    std::cout << "Test string 2: " << arr2  << std::endl;
+    std::cout << "Demoing C-style string printing... " << std::endl;
+    std::cout << "Demo string 1: " << arr1  << std::endl;
+    std::cout << "Demo string 2: " << arr2  << std::endl;
 
     std::cout << "Printing #1: " << std::endl;
     print_c_string(arr1);
@@ -38,41 +38,41 @@ void utilities::tests::test_print_c_str()
     std::cout << std::endl;
 }
 
-void utilities::tests::test_sum_to()
+void utilities::demos::demo_sum_to()
 {
     int value{50};
 
-    std::cout << "Testing min-max... " << std::endl;
+    std::cout << "Demoing min-max... " << std::endl;
     std::cout << "Sum of values from 1 to " << value << " : " << std::endl;
     std::cout << sum_to(value) << std::endl;
 
     std::cout << std::endl;
 }
 
-void utilities::tests::test_minmax()
+void utilities::demos::demo_minmax()
 {
     int a{};
     int b{};
 
-    std::cout << "Testing min-max... " << std::endl;
+    std::cout << "Demoing min-max... " << std::endl;
 
     {
         a = -3; b = 5;
-        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        std::cout << "Demoing for " << a << " and " << b << ":" << std::endl;
         auto [min, max] = minmax(a, b);
         std::cout << "Min-Max: " << min << " " << max << std::endl;
     }
 
     {
         a = -1; b = -2;
-        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        std::cout << "Demoing for " << a << " and " << b << ":" << std::endl;
         auto [min, max] = minmax(a, b);
         std::cout << "Min-Max: " << min << " " << max << std::endl;
     }
 
     {
         a = 7; b = 7;
-        std::cout << "Testing for " << a << " and " << b << ":" << std::endl;
+        std::cout << "Demoing for " << a << " and " << b << ":" << std::endl;
         auto [min, max] = minmax(a, b);
         std::cout << "Min-Max: " << min << " " << max << std::endl;
     }
@@ -80,9 +80,9 @@ void utilities::tests::test_minmax()
     std::cout << std::endl;
 }
 
-void utilities::tests::test_int_pair()
+void utilities::demos::demo_int_pair()
 {
-    std::cout << "Testing int pair... " << std::endl;
+    std::cout << "Demoing int pair... " << std::endl;
 
     IntPair p1;
 	p1.set(1, 1); // set p1 values to (1, 1)
@@ -94,9 +94,9 @@ void utilities::tests::test_int_pair()
     std::cout << std::endl;
 }
 
-void utilities::tests::test_point3d()
+void utilities::demos::demo_point3d()
 {
-    std::cout << "Testing 3d point... " << std::endl;
+    std::cout << "Demoing 3d point... " << std::endl;
 
     Point3d point;
     point.set_values(1, 2, 3);
@@ -133,9 +133,9 @@ void utilities::tests::test_point3d()
     std::cout << std::endl;
 }
 
-void utilities::tests::test_stack()
+void utilities::demos::demo_stack()
 {
-    std::cout << "Testing stack... " << std::endl;
+    std::cout << "Demoing stack... " << std::endl;
 
     Stack stack;
 	stack.reset();

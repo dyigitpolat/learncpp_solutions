@@ -7,10 +7,10 @@ namespace recursion
     void print_binary_representation_helper( const unsigned int n );
     void print_binary_representation( const int n );
 
-    namespace tests
+    namespace demos
     {
-        void test_factorial();
-        void test_sum_of_digits();
-        void test_print_binary_representation();
+        void demo_factorial();
+        void demo_sum_of_digits();
+        void demo_print_binary_representation();
     }
 }

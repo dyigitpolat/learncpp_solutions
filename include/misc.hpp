@@ -13,9 +13,9 @@ namespace misc
     // Chapter 10
     void print_employee_name( const Employee &employee);
 
-    namespace tests
+    namespace demos
     {
         // Chapter 10
-        void test_print_employee_name();
+        void demo_print_employee_name();
     }
 }

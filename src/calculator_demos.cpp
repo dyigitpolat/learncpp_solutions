@@ -3,7 +3,7 @@
 //std headers
 #include <iostream> //std::cout, std::endl
 
-void calculator::tests::test_calculator()
+void calculator::demos::demo_calculator()
 {
     start();
 }

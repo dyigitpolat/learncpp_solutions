@@ -16,8 +16,8 @@ namespace calculator
 
     void start();
 
-    namespace tests
+    namespace demos
     {
-        void test_calculator();
+        void demo_calculator();
     }
 }

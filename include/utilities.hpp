@@ -59,19 +59,19 @@ namespace utilities
         void print() const;
     };
 
-    namespace tests
+    namespace demos
     {
         // Chapter 9
-        void test_swap();
-        void test_print_c_str();
+        void demo_swap();
+        void demo_print_c_str();
 
         // Chapter 10
-        void test_sum_to();
-        void test_minmax();
+        void demo_sum_to();
+        void demo_minmax();
         
         // Chapter 11
-        void test_int_pair();
-        void test_point3d();
-        void test_stack();
+        void demo_int_pair();
+        void demo_point3d();
+        void demo_stack();
     }
 }
