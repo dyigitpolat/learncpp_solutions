@@ -43,7 +43,7 @@ void lambdas::tests::test_sort_seasons_by_temperatures()
 
 void lambdas::tests::test_math_game()
 {
-    std::cout << "Testing temperature based season sorting... " << std::endl;
+    std::cout << "Testing maths game... " << std::endl;
 
     math_game();
 
