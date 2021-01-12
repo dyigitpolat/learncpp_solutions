@@ -14,6 +14,7 @@ void Demo::play() const
     std::cout << "Selection: " << m_title << "..." << std::endl;
     std::cout << std::endl;
     m_function();
+    std::cout << std::endl;
 }
 
 const std::string& Demo::get_title() const
