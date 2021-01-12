@@ -3,12 +3,9 @@
 //std headers
 #include <iostream>
 
-DemoMenu::DemoMenu(const std::string &title) :
-    m_title{title}
+DemoMenu::DemoMenu(const std::string &title) : m_title{title}
 {
-
 }
-
 
 void DemoMenu::add_menu_item(const Demo &demo)
 {
@@ -18,7 +15,7 @@ void DemoMenu::add_menu_item(const Demo &demo)
 void DemoMenu::show() const
 {
     print_menu();
-    
+
     int user_input{};
     do
     {
@@ -28,8 +25,8 @@ void DemoMenu::show() const
         std::cin >> user_input;
     } while (user_input < 1 || user_input > static_cast<int>(m_demos.size()));
 
-    m_demos[user_input-1].play();
-    
+    m_demos[user_input - 1].play();
+
     char user_continue{};
     do
     {
@@ -41,31 +38,29 @@ void DemoMenu::show() const
     } while (user_continue != 'y' && user_continue != 'n');
     std::cout << std::endl;
 
-    if(user_continue == 'n') 
+    if (user_continue == 'n')
     {
         return;
     }
-    else 
+    else
     {
         show();
     }
 }
 
-
 void DemoMenu::handle_stdin_error() const
 {
-    if(std::cin.fail())
+    if (std::cin.fail())
     {
         std::cin.clear();
         std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     }
 }
 
-
 void DemoMenu::print_menu() const
 {
     print_title();
-    for(int i{}; const Demo &d : m_demos)
+    for (int i{}; const Demo &d : m_demos)
     {
         std::cout << ++i << ": " << d.get_title() << std::endl;
     }
