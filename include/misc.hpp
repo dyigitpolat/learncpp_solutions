@@ -2,6 +2,7 @@
 
 //std headers
 #include <string> //std::string
+#include <cstdint> //uint_fast8_t
 
 namespace misc
 {
@@ -28,12 +29,32 @@ namespace misc
         void print() const;
     };
 
+    class RGBA
+    {
+    private:
+        using color_value_t = std::uint_fast8_t;
+        color_value_t m_red{};
+        color_value_t m_green{};
+        color_value_t m_blue{};
+        color_value_t m_alpha{255};
+    
+    public:
+        RGBA(
+            color_value_t red = 0,
+            color_value_t green = 0,
+            color_value_t blue = 0,
+            color_value_t alpha = 255
+        );
+        void print() const;
+    };
+
     namespace demos
     {
         // Chapter 10
-        void demo_print_employee_name();
+        void demo_employee();
         
         // Chapter 11
         void demo_ball();
+        void demo_rgba();
     }
 }

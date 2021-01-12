@@ -38,7 +38,9 @@ void demos::demo_card_game()
 void demos::demo_misc()
 {
     DemoMenu menu("MISC");
-    menu.add_menu_item({misc::demos::demo_print_employee_name, "Print Employee Name"});
+    menu.add_menu_item({misc::demos::demo_employee, "Employee"});
+    menu.add_menu_item({misc::demos::demo_ball, "Ball"});
+    menu.add_menu_item({misc::demos::demo_rgba, "RGBA"});
     menu.show();
 }
 
