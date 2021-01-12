@@ -83,6 +83,7 @@ void lambdas::math_game()
             << *std::min_element( nums.begin(), nums.end(), 
                 [=](int a, int b){ return std::abs(a - user_input) < std::abs(b - user_input); } )
             << "?" << std::endl;
+            nums.clear();
         }
 
         is_game_ended = (nums.size() == 0);
