@@ -114,6 +114,16 @@ void utilities::demos::demo_point3d()
     {
         std::cout << "point1 and point3 are not equal\n";
     }
+
+    Point3d p{1.0, 2.0, 3.0};
+	Vector3d v{2.0, 2.0, -3.0};
+ 
+	p.print();
+    std::cout << "To be moved by: \n";
+    v.print();
+	p.moveByVector(v);
+    std::cout << "Moved point now at: \n";
+	p.print();
 }
 
 void utilities::demos::demo_stack()

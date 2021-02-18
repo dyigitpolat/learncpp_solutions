@@ -59,7 +59,7 @@ void utilities::IntPair::print()
 }
 
 
-void utilities::Point3d::set_values(const int x, const int y, const int z)
+void utilities::Point3d::set_values(const Coordinate_t x, const Coordinate_t y, const Coordinate_t z)
 {
     m_x = x;
     m_y = y;
@@ -117,4 +117,28 @@ void utilities::Stack::print() const
         std::cout << m_arr[i] << " ";
     }
     std::cout << ")" << std::endl;
+}
+
+utilities::Vector3d::Vector3d(Coordinate_t x, Coordinate_t y, Coordinate_t z) :
+    m_x{x}, m_y{y}, m_z{z}
+{
+
+}
+
+void utilities::Vector3d::print() const
+{    
+    std::cout << "Vector(" << m_x << " , " << m_y << " , " << m_z << ")" << std::endl;       
+}
+
+utilities::Point3d::Point3d(Coordinate_t x, Coordinate_t y, Coordinate_t z) : 
+    m_x{x}, m_y{y}, m_z{z}
+{
+
+}
+
+void utilities::Point3d::moveByVector(const Vector3d &v)
+{
+    m_x += v.m_x;
+    m_y += v.m_y;
+    m_z += v.m_z;
 }

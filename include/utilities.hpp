@@ -30,17 +30,38 @@ namespace utilities
         void print();
     };
 
+    using Coordinate_t = double;
+
+    class Vector3d;
+    
     class Point3d
     {
     private:
-        int m_x;
-        int m_y;
-        int m_z;
+        Coordinate_t m_x;
+        Coordinate_t m_y;
+        Coordinate_t m_z;
     
     public:
-        void set_values(const int x, const int y, const int z);
+        Point3d(Coordinate_t x = 0.0, Coordinate_t y = 0.0, Coordinate_t z = 0.0);
+
+        void set_values(const Coordinate_t x, const Coordinate_t y, const Coordinate_t z);
         void print() const;
         bool is_equal(const Point3d &p) const;
+        void moveByVector(const Vector3d &v);
+    };
+
+    class Vector3d
+    {
+    private:
+        Coordinate_t m_x{};
+        Coordinate_t m_y{};
+        Coordinate_t m_z{};
+    
+    public:
+        Vector3d(Coordinate_t x = 0.0, Coordinate_t y = 0.0, Coordinate_t z = 0.0);
+        void print() const;
+
+        friend void Point3d::moveByVector(const Vector3d &v);
     };
 
     class Stack
